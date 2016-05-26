@@ -2,7 +2,7 @@
 using System.Collections;
 
 [RequireComponent(typeof(UIHoleCubeTexture))]
-public class testTexture : MonoBehaviour
+public class SplashFrame : MonoBehaviour
 {
     public enum Speed
     {

@@ -177,7 +177,7 @@ public class UIHoleCubeTexture : UIWidget
         }
     }
 
-    private float mradis = -16f;
+    private float mradis = -2f;
     public float Radis
     {
         get

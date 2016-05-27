@@ -15,7 +15,10 @@ public class SplashFrame : MonoBehaviour
 
     void Start()
     {
-        tex = gameObject.GetComponent<UIHoleCubeTexture>();
+        if (tex == null)
+        {
+            tex = gameObject.GetComponent<UIHoleCubeTexture>();
+        }
     }
 
     void Update()
@@ -36,6 +39,30 @@ public class SplashFrame : MonoBehaviour
                 default:
                     break;
             }
+        }
+    }
+
+    public static SplashFrame Create(Transform trans)
+    {
+        GameObject go = Instantiate(Resources.Load("SplashImage")) as GameObject;
+        Transform tran = go.transform;
+        tran.parent = trans.parent;
+        tran.localPosition = trans.localPosition;
+        Debug.LogError("locapos:"+ trans.localPosition+ " localscale:"+ trans.localScale);
+
+        SplashFrame fram = go.GetComponent<SplashFrame>();
+        fram.SetSize(10,10);
+        tran.localScale = 0.1f*trans.localScale;
+        return fram;
+    }
+
+    public void SetSize(int width,int height)
+    {
+        if (tex == null)
+        {
+            tex = gameObject.GetComponent<UIHoleCubeTexture>();
+            tex.width = width;
+            tex.height = height;
         }
     }
 }

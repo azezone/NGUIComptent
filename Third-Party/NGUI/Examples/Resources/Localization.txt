@@ -1,0 +1,44 @@
+﻿KEY,Chinese,English,Japanese
+Flag,Flag-US,Flag-FR,Flag-JP
+Language,Chinese,English,Japanese
+Home_NoNet,网络未连接，请联网后重试,No internet connection，please try again,ネットワークに接続していません、通信状況をご確認の上、もう一度お試しください
+Home_Category,列表加载中...,Loading photo list...,リストを読み込み中．．．
+Home_Category_Failed,网络请求超时，请检查网络,Internet request timeout，please check your network,ネットワークリクエストはタイムアウトしました、通信状況をご確認の上、もう一度お試しください
+Net_Slow,当前网络缓慢，请耐心等待,The current network is slow, please be patient,電波が悪いのため、しばらくお待ちしてください
+Home_Exit,再按一次退出！,Press B again to quit！,再クリックして閉じる
+Left_Menu_Featured,推荐,Featured,おすすめ
+Left_Menu_Local,本地,Local,オフライン画像
+Left_Menu_Special,专题,Special,特集
+Left_Menu_Setting,设置,Settings,設定
+Arbitrary_Gate,任意门,Arbitrary Gate,どこでもドア
+Gallery_Title,全景图赏,Gallery,パノラマ画像
+Folder_Toast,请将图片放入Pico Photos文件夹里,Please put your 360 photos into Pico Photos folder.,画像をPico Photosフォルダに保存してください
+Player_Introductio,全景图赏为您带来精选的全景图片内容，从风景名胜到极地风光，从乡村原野到霓虹都市，从现实场景到科幻星空，您可以任意转动头部观赏并体验.,360 Photos brings you selected panorama images，from historic sites to polar views， peaceful villages to prosperous cities，and reallife scenes to the fantastic starry sky. You can turn your head freely to experience all of them.,パノラマ画像では、観光名所から極地の風景まで、穏やかな田舎からネオン都市まで、現実シーンから幻想的な星空までの美しい画像を展示され、顔の向きを変えたり、画面をスワイプするとその方角の画像をお楽しみいただけます。
+Player_Memory_Clear,全景图片缓存文件已占用,Downloaded photos has occupied the storage space by .,パノラマ画像のキャッチャー使用中
+Home_Category_All,全部,All,すべて
+Bar_First,已到第一页,First page already,最初です
+Bar_Last,已到最后一页,Last page already,最後です
+Player_LocalPhoto_Failed,不支持该图片格式，无法播放,Can't play unsupported photo format,再生できません、無効またサポートされていない画像ファイルフォーマット
+Player_DownloadPhoto_Failed,图片加载失败,Failed to play the photo,画像読み込みができません、
+Player_Photo_Deleted,文件不存在,The photo doesn't exist,ファイルが見つかりません
+PlayerScroll_Out_Storage,存储空间不足,Insufficient storage space,空き容量が足りません
+SettingPage_Clear,清除,Clear,削除
+Arbitrary_Gate_Tip,来一场说走就走的“旅行”,Travelling...,思い立つ旅．．．
+Loading,下载中...,Loading...,読み込み中．．．
+Loading2,加载中...,Loading...,読み込み中．．．
+Image_Logo_New,新的,NEW,ニュー
+Image_Logo_Hot,热门,Hot,トップ
+Image_Provider_720yun,720云,720云,720云
+Image_Provider_CNTraveler,悦游,悦游,悦游
+Button_Refresh,点击刷新,Refresh,再詠み込み
+LoadFail_Tip,加载失败,Load Faild,読み込みできませんでした
+Update_Force,现有新的版本可供升级，为了更好的使用体验，强烈建议您安装最新版本。\n您希望立即升级吗？,Now a new version is available to update. For better user experience， we strongly suggest you to install the latest vesrion.\nDo you want to update right now?, 新しいバージョンが発見されました、最適な体験のため。\nいま入手しますか？
+Update,更新,Update,はい
+Cancel,取消,Cancel,いいえ
+Updating,更新中,Updating,アップデート中
+Installing,安装中,Installing,インストール中
+Install_Failed,安装失败,Fail to install,null
+Version,当前的版本号是:V ,Current Version :V ,バージョン
+Updated,您已经升级到最新版本,You have updated to the lastest version.,最新バージョンです
+ReleaseNote,更新日志,Release Note,アップデート履歴
+Click_Too_Fast,亲，您点的太快了！,You click it too fast!,しばらくお待ちして再クリックしてください

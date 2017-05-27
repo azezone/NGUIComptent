@@ -69,37 +69,45 @@ public class MsgManager : Singleton<MsgManager>
     /// 发送消息
     /// </summary>
     /// <param name="id"></param>
-    public void SendMsg(MsgID id, Bundle bundle)
+    public void SendMsg(MsgID id, Bundle bundle = null)
     {
         List<IMsgHandle> handlist;
         if (msgDict.TryGetValue(id, out handlist))
         {
             if (handlist != null && handlist.Count > 0)
             {
+                // clear the null
                 for (int i = 0; i < handlist.Count; i++)
                 {
                     MonoBehaviour mono = handlist[i] as MonoBehaviour;
                     if (mono == null)
                     {
-                        Debug.Log("the MonoBehaviour is null!");
                         RemoveMsg(id, handlist[i]);
+                    }
+                }
+                // do HandleMessage
+                for (int i = 0; i < handlist.Count; i++)
+                {
+                    if (handlist[i] != null && (handlist[i] as MonoBehaviour) != null)
+                    {
+                        handlist[i].HandleMessage(id, bundle);
                     }
                     else
                     {
-                        handlist[i].HandleMessage(id, bundle);
+                        Debuger.Log("the MonoBehaviour is null!");
                     }
                 }
             }
             else
             {
                 msgDict.Remove(id);
-                Debug.Log("the hand list is null!");
+                Debuger.Log("the hand list is null!");
             }
         }
         else
         {
             msgDict.Remove(id);
-            Debug.Log("the hand list is null!");
+            Debuger.Log("the hand list is null!");
         }
     }
 }
